@@ -20,19 +20,30 @@ class Calc {
 
 class Casio {
 	
-	public Casio(){
+	public Casio(int i ,int j){
+		add(i,j);
+	}
+
+	public Casio(int i ,int j,int k){
+		add(i,j,k);
 	}
 	
 	public void add(int i, int j){
 		System.out.println(i + j);
 	}
+	
+	public void add(int i, int j , int k){
+		System.out.println(i + j + k);
+	}
+	
+	
 }
 
 public class ObjectDemo {
 
 	public static void main(String[] args) {
 		
-		Casio add= new Casio();
+		Casio add= new Casio(4,4,4);
 		
 	}
 	/*	Calc obj; // this is not object it is a reference to object
